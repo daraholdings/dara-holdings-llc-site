@@ -1,0 +1,49 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+*.pid
+
+# Node.js dependencies (if applicable)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+dist/
+build/
+*.map
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temp files and system backups
+*.~*
+*.orig
+
+# Other common system files
+*.lock
+.env
+.env.local
+.env.*.local
