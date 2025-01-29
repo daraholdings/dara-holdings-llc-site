@@ -17,6 +17,9 @@
             justify-content: flex-start;
             min-height: 100vh;
         }
+        body a {
+            color: inherit;
+        }
         header {
             text-align: center;
             width: 100%;
@@ -37,18 +40,50 @@
             background-color: #f4f4f4;
             width: 100%;
         }
+        /* Subsidiary Grid Styles */
+        .subsidiary-grid {
+            display: grid;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+        }
+        .subsidiary-grid:only-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .subsidiary-item {
+            text-align: center;
+        }
+        .subsidiary-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .subsidiary-logo {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        .subsidiary-name {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="resources/logo.png" alt="Dara Holdings LLC Logo">
+    <img src="resources/dara-logo.png" alt="Dara Holdings LLC Logo">
 </header>
 
 <main>
     <section>
         <h1>About Us</h1>
-        <p>Welcome to Dara Holdings LLC, a forward-thinking holdings company dedicated to driving innovation across the technology landscape. As the parent organization to a diverse portfolio of subsidiary companies, we are committed to fostering growth, enabling cutting-edge solutions, and empowering businesses to excel in their respective fields.</p>
+        <p>Welcome to Dara Holdings LLC, a forward-thinking holdings company dedicated to driving innovation across the technology landscape and beyond. As the parent organization to a diverse portfolio of subsidiary companies, we are committed to fostering growth, enabling cutting-edge solutions, and empowering businesses to excel in their respective fields.</p>
     </section>
 
     <section>
@@ -68,8 +103,16 @@
     </section>
 
     <section>
-        <h2>Why Choose Us?</h2>
-        <p>With a proven track record of strategic investments, operational excellence, and sustainable growth, we are more than just a holdings company—we are a partner in success. Backed by leadership and engineering expertise honed at the highest levels of the technology industry, we bring decades of experience in building world-class software and services that have been consumed by billions of people worldwide. Our deep industry knowledge, combined with our resources and strategic vision, empowers our partners and subsidiaries to break new ground, adapt to evolving markets, and lead with confidence.</p>
+        <h2>Our Subsidiaries</h2>
+        <p>We are proud to be the parent organization to a diverse group of subsidiary companies. Each of these companies shares our vision for growth and innovation:</p>
+        <div class="subsidiary-grid">
+            <div class="subsidiary-item">
+                <a href="https://www.zanyar.ai" target="_blank">
+                    <img src="resources/zanyar-logo.png" alt="Zanyar LLC Logo" class="subsidiary-logo">
+                    <div class="subsidiary-name">Zanyar AI</div>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section>
